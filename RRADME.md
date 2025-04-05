@@ -78,7 +78,7 @@ This project demonstrates a dockerized application consisting of a Receiver Serv
 2.  **Start the Docker Compose setup:**
     ```bash  
     Run below command in same pulled repository
-    docker-compose up -d --build -d
+    docker-compose up --build -d
     ```
     This command will build the Docker images (if necessary) and start all the services in detached mode.
 
