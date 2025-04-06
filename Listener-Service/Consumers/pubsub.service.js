@@ -1,4 +1,4 @@
-// Listener-Service/Consumers/pubsub.service.js
+
 import { createClient } from 'redis';
 import dotenv from 'dotenv';
 dotenv.config({ path: './config/.env' });
@@ -13,7 +13,7 @@ client.on('error', (err) => console.error('Redis Client Error:', err));
 
 async function connectRedis() {
   try {
-    if (!client.isOpen) { // Check if the client is not already connected
+    if (!client.isOpen) { 
       await client.connect();
       console.log('Redis client connected successfully.');
     }
