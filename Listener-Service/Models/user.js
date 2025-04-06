@@ -1,4 +1,4 @@
-// Listener-Service/Models/user.js
+
 import mongoose from 'mongoose';
 
 const receiverHistorySchema = new mongoose.Schema({
