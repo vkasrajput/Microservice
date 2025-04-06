@@ -6,15 +6,16 @@ This project showcases a fully containerized application featuring a Receiver Se
 
 ## Technologies We Used
 
-* **Docker:** The backbone for packaging our application services into isolated containers.
-* **Docker Compose:** Our tool of choice for defining and managing all the Docker containers that make up our application.
-* **MongoDB:** Our database system, responsible for the persistent storage of application data.
+* **Docker:** For packaging our application services into isolated containers.
+* **Docker Compose:** Tool of choice for defining and managing all the Docker containers that make up our application.
+* **MongoDB:** Database system, responsible for the persistent storage of application data.
 * **Redis:** Used as a fast and reliable message broker, enabling communication between our services via a Publish/Subscribe pattern.
 * **Node.js (Likely):** We've probably built our Receiver and Listener Services using Node.js, given the typical needs of such microservices.
 
 ## Project Layout
 
-<img width="236" alt="image" src="https://github.com/user-attachments/assets/d22a963c-b796-447a-90a6-16083ce4ab17" />
+<img width="194" alt="image" src="https://github.com/user-attachments/assets/5c89c07c-a6fe-447e-b328-05e647d90f5c" />
+
 
 * **`Receiver-Service/`:** This directory holds everything for the Receiver Service, including its `Dockerfile` (which tells Docker how to build the container image), the application's source code, and potentially a `receiver.env` file for environment-specific settings. This service likely takes in requests and might send out messages via Redis or save information to MongoDB.
 
@@ -44,10 +45,10 @@ This project showcases a fully containerized application featuring a Receiver Se
 
  ### Peeking at the Services
 
-* **Receiver Service:** You can access the Receiver Service by pointing your web browser http://localhost:3000 . 
+* **Receiver Service:** You can access the Receiver Service by pointing postman http://localhost:3000 . 
 
 * **Listener Service:** The Listener Service is also running and you can likely reach it on `http://localhost:4000
 
-* **MongoDB:** for database connect http://localhost:27017 on mongodb compass or use your shell
+* **MongoDB:** for database check connect http://localhost:27017 on mongodb compass or use your shell
 
 
